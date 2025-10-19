@@ -11,24 +11,58 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        flex-direction: column;
         text-align: center;
         
     }
     .container{
         width: 80%;
         height: 400px;
-        background-color: black;
+        /* background-color: black; */
         color: aliceblue;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .row{
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        display: flex;
+    }
+    .row_1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+    .child{
+        width: 50%;
+        background-color: black;
+        height: 100%;
+    }
+    .child_left{
+        width: 70%;
+    }
+    .child_right{
+        width: 30%;
     }
 </style>
 <body>
     <div class="container">
+<div class="row row_1">
+        <div class="child child_left">left</div>
+            <div class="child child_right">right
+
+            </div>
+
+            
+        </div>
         <h3>Course FlexBox</h3>
-        <div class="row row1"></div>
+        
         <div class="row row2"></div>
         <div class="row row3"></div>
     </div>
